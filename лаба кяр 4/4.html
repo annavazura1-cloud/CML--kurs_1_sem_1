@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задание 4 - Регистрация постоянного клиента</title>
+    <link rel="stylesheet" href="4.css">
+</head>
+
+<body>
+    <form>
+        <h2>Регистрация постоянного клиента</h2>
+   
+        <table>
+            <tr>
+                <td>Фамилия:</td>
+                <td><input type="text" name="lastname"></td>
+            </tr>
+
+            <tr>
+                <td>Имя:</td>
+                <td><input type="text" name="firstname"></td>
+            </tr>
+
+            <tr>
+                <td>Отчество:</td>
+                <td><input type="text" name="middlename"></td>
+            </tr>
+            <tr>
+                <td>Ваш возраст:</td>
+                <td><input type="text" name="age"></td>
+            </tr>
+            <tr>
+                <td>Пол:</td>
+                <td>
+                    <input type="radio" name="gender" value="male"> мужской
+                    <input type="radio" name="gender" value="female"> женский
+                </td>
+            </tr>
+            <tr>
+                <td>Email:</td>
+                <td><input type="text" name="email"></td>
+            </tr>
+            <tr>
+                <td>Страна проживания:</td>
+                <td><input type="text" name="country"></td>
+            </tr>
+            <tr>
+                <td>Откуда вы узнали<br> о нас?</td>
+                <td>
+                    <select name="source">
+                        <option value="">Выберите вариант</option>
+                        <option value="friends">Друзья рассказали</option>
+                        <option value="self">Сам узнал(ла)</option>
+                        <option value="internet">Интернет</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Дата заполнения:</td>
+                <td><input class="input" type="date" name="date"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <button type="submit">Регистрация</button>
+                    <button type="reset">Отмена</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html> 

@@ -1,0 +1,16 @@
+.sub-items1 li {
+  color:purple;
+  font-size: 18px;
+  font-family:' Times New Roman';
+  
+}
+.sub-items2 li {
+  color:rgb(238, 255, 3);
+  font-size: 20px;
+  font-family:' Times New Roman';
+}
+.sub-items3 li {
+  color:rgb(3, 255, 70);
+  font-size: 22px;
+  font-family:' Times New Roman';
+}

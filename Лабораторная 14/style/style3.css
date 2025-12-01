@@ -1,0 +1,69 @@
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 20px;
+}
+
+h1 {
+  color: blueviolet;
+  font-family: "Times New Roman", Times, serif;
+}
+
+h3 {
+  color: #333;
+}
+
+p {
+  margin-bottom: 15px;
+}
+
+#one {
+  color: aqua;
+  font-family: cursive;
+  font-size: x-large;
+}
+
+#two {
+  color: aquamarine;
+  font-family: "Times New Roman", Times, serif;
+  font-size: x-small;
+}
+
+#tree {
+  color: blue;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: medium;
+}
+
+#a1 {
+  color: aliceblue;
+}
+
+#a2 {
+  color: black;
+}
+
+#a {
+  color: brown;
+}
+
+#b1 {
+  color: cadetblue;
+  padding: 6px;
+}
+
+#b2 {
+  color: rgb(154, 1, 103);
+}
+
+form label {
+  display: inline-block;
+}
+
+form input[type=text] {
+  padding: 8px;
+}
+
+form input[type=submit] {
+  padding: 10px 20px;
+}/*# sourceMappingURL=style3.css.map */

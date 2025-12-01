@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Task 5</title>
+        <style>
+            /* 5.1 Эллипс: анимация изменения цвета по клику */
+            .ellipse-anim { animation: ellipseColor 0.9s ease forwards; }
+            @keyframes ellipseColor {
+                0% { fill: green; stroke: green; }
+                40% { fill: #a6f0c6; stroke: #4fd19a; }
+                100% { fill: #00bcd4; stroke: #008ba3; }
+            }
+
+            /* 5.2 Прямоугольник: анимация контура (рисование) */
+            .rect-hidden { stroke-dasharray: 600; stroke-dashoffset: 600; }
+            .rect-draw { animation: drawStroke 6s ease forwards; }
+            @keyframes drawStroke { to { stroke-dashoffset: 0; } }
+
+            /* 5.3 Треугольник: при hover изменение цвета контура */
+            #myTriangle { transition: stroke 5s ease; }
+            #myTriangle:hover { stroke: red;  }
+
+            svg { background:#fffaf0; }
+        </style>
+</head>
+<body>
+    <svg width="1000" height="600" xmlns="http://www.w3.org/2000/svg">
+        <!--  круг  -->
+           <defs>
+            <radialGradient id="grad2" cx="50%" cy="50%" r="55%">
+                <stop offset="0%" style="stop-color:aliceblue; stop-opacity:1" />
+                <stop offset="50%" style="stop-color:yellow; stop-opacity:1" />
+                <stop offset="100%" style="stop-color:red; stop-opacity:1" />
+            </radialGradient>
+        </defs>
+        <circle cx="100" cy="150" r="80" stroke="blue" stroke-width="2" fill="url(#grad2)"/>
+        
+        <!--  прямоугольник -->
+        <rect id="myRect" x="210" y="80" width="160" height="140" fill="red" stroke="orange" stroke-width="4" class="rect-hidden"/>
+        
+        <!--  овал  -->
+        <ellipse id="myEllipse" cx="490" cy="160" rx="90" ry="60" fill="green" stroke="green" stroke-width="2" style="cursor:pointer" title="Кликните для смены цвета"/>
+        
+        <!--  треугольник -->
+         <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" style="stop-color:green; stop-opacity:1" />
+                <stop offset="100%" style="stop-color:orange; stop-opacity:1" />
+            </linearGradient>
+        </defs>
+        <polygon id="myTriangle" points="590,230 750,230 670,70" fill="url(#grad1)" stroke="yellow" stroke-width="4"/>
+        <!-- Линия в форме Z -->
+    <polyline 
+  points="0,300  400,300  300,340  700,340"  fill="none" stroke="purple" stroke-width="3"/>
+        </svg>
+
+        <script>
+            // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! мб неправильно 5.1: Эллипс — при клике запускаем анимацию цвета
+            (function(){
+                const el = document.getElementById('myEllipse');
+                if(!el) return;
+                el.addEventListener('click', function(){
+                    el.classList.remove('ellipse-anim');
+                    void el.offsetWidth; // reflow
+                    el.classList.add('ellipse-anim');
+                });
+            })();
+
+            // 5.2: Прямоугольник — анимация контура при загрузке
+            (function(){
+                const r = document.getElementById('myRect');
+                if(!r) return;
+                window.addEventListener('load', function(){ r.classList.add('rect-draw'); });
+            })();
+        </script>
+</body>
+</html>

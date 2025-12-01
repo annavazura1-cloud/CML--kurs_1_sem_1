@@ -1,0 +1,80 @@
+@keyframes zad6 {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0.8; /* 80% */
+    }
+}
+h1 { 
+position: relative;
+animation: zad6  4s linear infinite; }
+
+body{background-color: rgb(182, 244, 182);}
+
+@keyframes tyda-syda {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(200px);
+    }
+}
+.one {
+    position: relative;
+    width: 160px;
+    animation: tyda-syda 4s linear infinite alternate;
+}
+
+
+@keyframes syda-tyda {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(200px);
+    }
+}
+.two {
+    position: relative;
+    width: 160px;
+    animation: syda-tyda 4s linear infinite alternate;
+}
+
+
+@keyframes three {
+    0% {
+        transform: translateX(0) translateY(0);
+    }
+    25% {
+        transform: translateX(100px) translateY(50px) ;
+    }
+    50% {
+        transform: translateX(200px) translateY(0);
+    }
+    75% {
+        transform: translateX(300px) translateY(-50px);
+    }
+    100% {
+        transform: translateX(400px) translateY(0);
+    }
+}
+
+.three {
+   position: relative;
+    width: 160px;
+    animation: three 8s ease-in-out infinite;
+}
+
+@keyframes four{
+   0% { left: 0; top: 0; }
+25% { left: 200px; top: 0; }
+50% { left: 200px; top: 200px; }
+75% { left: 0; top: 200px; }
+100% { left: 0; top: 0; }
+}
+.four{
+   position: relative;
+    width: 160px;
+   animation: four 8s linear infinite
+}

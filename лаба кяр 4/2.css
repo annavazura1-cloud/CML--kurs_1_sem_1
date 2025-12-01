@@ -1,0 +1,37 @@
+table {
+empty-cells: hide; /* Скрывает пустые ячейки таблицы */
+text-align: center;
+margin: auto;
+}
+
+tr,td, th{
+	font-weight: bold;
+	border: 2px solid gray;
+}
+
+h4
+ {
+	font-size: 1.2em;
+	text-align: center;
+}
+th {
+	background-color:darkblue;
+	color: aliceblue;
+
+}
+.col{
+	background-color: #0BFF ;
+	color: aliceblue;
+
+}
+.col1{
+	background-color: purple ;
+	color: aliceblue;
+
+}
+.col2{
+	background-color: green ;
+	color: aliceblue;
+
+}
+

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Пример 13.5</title>
+    </head>
+    <body>
+        <div>
+        <p>Имя: <span id="name"></span></p>
+        <p>Фамилия: <span id="family"></span></p>
+        </div>
+        <script>
+            txt = "<student>";
+            txt = txt + "<name>Иванов</name>"; 
+            txt = txt + "<family>Иван</family>";
+            txt = txt + "</student>";
+            if (window.DOMParser) 
+            {
+                parser = new DOMParser(); //новый экземпляр парсере для разбора
+                xmlDoc = parser.parseFromString(txt,"text/xml");  //принимает строку и тип содержимого
+            }
+            else  //Internet Explorer
+            {
+                xmlDoc = new ActiveXObject("Microsoft.XMLDOM");
+                xmlDoc.async = false;
+                xmlDoc.loadXML(txt);
+            }
+            document.getElementById("name").innerHTML = xmlDoc.getElementsByTagName("name")
+            [0].childNodes[0].nodeValue;
+            document.getElementById("family").innerHTML = xmlDoc.getElementsByTagName("family")
+            [0].childNodes[0].nodeValue;
+        </script>
+    </body>
+</html>

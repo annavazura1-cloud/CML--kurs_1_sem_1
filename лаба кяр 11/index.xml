@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="events.css"?>
+
+<events>
+  <event>
+    <date>2025-11-03</date>
+    <type>Конференция</type>
+    <description>Обсуждение новых технологий в сфере образования.</description>
+  </event>
+  <event>
+    <date>2025-11-10</date>
+    <type>Вебинар</type>
+    <description>Онлайн-семинар по адаптивной верстке и медиазапросам.</description>
+  </event>
+  <event>
+    <date>2025-11-15</date>
+    <type>Выставка</type>
+    <description>Презентация интерактивных решений в дизайне интерфейсов.</description>
+  </event>
+</events>

@@ -1,0 +1,18 @@
+<?xmlversion="1.0" encoding="UTF-8"?> 
+<?xml-stylesheet type="text/css" href="style.css"?> 
+<FACULTY> 
+ <SPECIALIZATION> 
+   <NAME> 
+   <TIME> 
+   <EXAM> 
+   <PAGES> 
+   <PASSING> 
+</SPECIALIZATION> 
+<SPECIALIZATION> 
+   <NAME> 
+   <TIME> 
+   <EXAM> 
+   <PAGES> 
+   <PASSING> 
+</SPECIALIZATION> 
+</FACULTY>

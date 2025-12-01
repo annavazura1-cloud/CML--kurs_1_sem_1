@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Task2(1)</title>
+</head>
+<body>
+  <p>Имя: <span id="name"></span></p>
+  <p>Звание: <span id="achivment"></span></p>
+  <p>Возраст: <span id="age"></span></p>
+
+  <script>
+    let txt = "<personality>";
+    txt += "<name>Васька</name>";
+    txt += "<achivment>Местный городской сумашедший</achivment>";
+    txt += "<age>19</age>";
+    txt += "</personality>";
+
+    let parser = new DOMParser();
+    let xmlDoc = parser.parseFromString(txt, "text/xml");
+
+    document.getElementById("name").innerHTML =
+      xmlDoc.getElementsByTagName("name")[0].childNodes[0].nodeValue;
+    document.getElementById("achivment").innerHTML =
+      xmlDoc.getElementsByTagName("achivment")[0].childNodes[0].nodeValue;
+    document.getElementById("age").innerHTML =
+      xmlDoc.getElementsByTagName("age")[0].childNodes[0].nodeValue;
+  </script>
+</body>
+</html>

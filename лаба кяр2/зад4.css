@@ -1,0 +1,2 @@
+h1+p{background-color: yellow;}
+h2 ~ p { color: rgb(0, 4, 240); }

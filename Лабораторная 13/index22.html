@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Task 2(2)</title>
+    </head>
+    <body>
+        <div>
+        <p>Книга: <span id="name1"></span></p>
+        <p>Книга: <span id="name2"></span></p>
+        <p>Книга: <span id="name3"></span></p>
+        <p>Автор: <span id="author"></span></p>
+        </div>
+        <script>
+            txt = "<list>";
+            txt = txt + "<author>Фёдор Достоевский:</author>";
+            txt = txt + "<name1>«Преступление и наказание»</name1>";
+            txt = txt + "<name2>«Идиот»</name2>"; 
+            txt = txt + "<name3>«Братья Карамазовы»</name3>"; 
+            txt = txt + "</list>";
+            if (window.DOMParser) 
+            {
+                parser = new DOMParser();
+                xmlDoc = parser.parseFromString(txt,"text/xml");
+            }
+            else  //Internet Explorer
+            {
+                xmlDoc = new ActiveXObject("Microsoft.XMLDOM");
+                xmlDoc.async = false;
+                xmlDoc.loadXML(txt);
+            }
+            document.getElementById("name1").innerHTML = xmlDoc.getElementsByTagName("name1")
+            [0].childNodes[0].nodeValue;
+             document.getElementById("name2").innerHTML = xmlDoc.getElementsByTagName("name2")
+            [0].childNodes[0].nodeValue;
+              document.getElementById("name3").innerHTML = xmlDoc.getElementsByTagName("name3")
+            [0].childNodes[0].nodeValue;
+            document.getElementById("author").innerHTML = xmlDoc.getElementsByTagName("author")
+            [0].childNodes[0].nodeValue;
+        </script>
+    </body>
+</html>

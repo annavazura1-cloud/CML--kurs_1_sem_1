@@ -1,0 +1,140 @@
+/* задание 1*/
+
+.container {
+    padding: 10px;
+    margin-top: 10px;
+    display: inline-block; /* block потому что иначе по уродски*/
+    white-space: nowrap; /* добавили тк иначе не переноситься в строку*/
+}
+
+.container {
+    width: 65px;
+    height: 80px;
+    margin: 10px;
+    /*расстояние между*/
+    text-align: center;
+    line-height: 80px; /* высота нахождения букв*/
+    font-size: 24px;
+    font-weight: bold;
+
+}
+
+.red {
+    border: 10px outset;
+    border-color:
+        rgb(255, 0, 0) rgb(210, 6, 6) rgb(210, 6, 6) rgb(255, 0, 0);
+}
+
+.green {
+    border: 10px dashed rgb(0, 255, 0)
+}
+
+.blue {
+    border: 10px dotted rgb(0, 0, 255)
+}
+
+.cyan {
+    border: 10px double rgb(0, 255, 255)
+}
+
+.magenta {
+    border: 10px groove rgb(255, 0, 255);
+}
+
+.yellow {
+    border: 10px inset;
+    border-color:
+        rgb(198, 198, 8) rgb(255, 255, 0) rgb(255, 255, 0) rgb(198, 198, 8);
+}
+
+.black {
+    border: 10px solid rgb(0, 0, 0)
+}
+
+
+/* задание 2 */
+/* Общие стили для всех абзацев */
+span,strong,em {
+    margin: 5px;/* Поле внеш отступ*/
+    padding: 5px;/*внутр. отступы*/
+    background: #FFA500;
+    border: solid #FF4500;
+}
+
+/* 2.1 Первый абзац */
+p.first {
+    margin-left: auto;
+    margin-right: auto;
+   width: 400px;
+  text-align: center;
+  border: solid #FF7F50;
+}
+
+/* 2.2 Второй абзац */
+p.second {
+ border: 5px solid red;
+  border-radius: 20px 40px;
+  overflow: auto;
+  box-shadow: 2px -2px 8px 8px rgba(0, 0, 0, 0.5) inset;
+}
+
+/* 2.3 Третий абзац */
+p.third {
+    border: solid #FF6347;
+}
+
+
+/* Задание 3*/
+.paragraph1{
+  border: 5px solid;
+  border-left-color: brown;
+  border-top-color: orange;
+  border-right-color: darkblue;
+  border-bottom-color: yellow;
+}
+
+.paragraph2{
+  border: 5px solid #007BA7;
+  border-style: none solid;
+}
+
+.paragraph3{
+  border: 5px dashed lightblue;
+  border-top: solid rgb(229 43 80);
+}
+
+.paragraph4{
+  border: 1px dotted orange;
+}
+
+.paragraph5{
+  border: 2px;
+  border-style: solid dashed;
+  border-color: darkblue darkred;
+}
+
+.paragraph6{
+  border: 5px groove #B3446C;
+}
+
+.paragraph7{
+  border-top: 1px dashed #808000;
+  border-bottom: 3px solid #FF7518;
+}
+
+.paragraph8{
+  border: 5px double #CC7722;
+  border-style: double #CC7722;
+}
+
+.paragraph9{
+  border: 5px ridge #B5A642;
+  border-style: ridge ridge none none;
+}
+
+.paragraph10{
+  border: 5px dotted rgb(0 40 0);
+  border-style: none dotted dotted dotted;
+}
+
+

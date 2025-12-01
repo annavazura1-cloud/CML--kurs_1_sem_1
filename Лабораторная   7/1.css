@@ -1,0 +1,33 @@
+div{ margin-left:30px;
+     margin-right:30px;
+     padding: auto;
+     display: inline-block;
+}
+
+@keyframes zad6 {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0.8; /* 80% */
+    }
+}
+h1 { 
+position: relative;
+animation: zad6  4s linear infinite; }
+
+
+.odin:hover {
+    transform:scale(0.5) ;}
+
+
+.dva{transform: rotate(45deg) }
+
+
+.tree{transform: translate(50px)}
+
+
+
+.chetire:hover{transform: skew(-20deg)}
+
+

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="events.css"?>
+
+<!DOCTYPE events [
+  <!ELEMENT events (event+)>
+  <!ELEMENT event (date, type, description)>
+  <!ELEMENT date (#PCDATA)>
+  <!ELEMENT type (#PCDATA)>
+  <!ELEMENT description (#PCDATA)>
+
+  <!-- Сущности -->
+  <!ENTITY conf "Конференция">
+  <!ENTITY web "Вебинар">
+  <!ENTITY expo "Выставка">
+  <!ENTITY desc1 "Обсуждение новых технологий в сфере образования.">
+  <!ENTITY desc2 "Онлайн-семинар по адаптивной верстке и медиазапросам.">
+  <!ENTITY desc3 "Презентация интерактивных решений в дизайне интерфейсов.">
+]>
+
+<events>
+  <event>
+    <date>2025-11-03</date>
+    <type>&conf;</type>
+    <description>&desc1;</description>
+  </event>
+  <event>
+    <date>2025-11-10</date>
+    <type>&web;</type>
+    <description>&desc2;</description>
+  </event>
+  <event>
+    <date>2025-11-15</date>
+    <type>&expo;</type>
+    <description>&desc3;</description>
+  </event>
+</events>

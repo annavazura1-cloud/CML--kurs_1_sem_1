@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="attestation.xsl"?>
+
+<catalog> 
+<cd> 
+<title>Аттестация учеников</title> 
+<stydent>Cтудент 1</stydent> 
+<mark1>3</mark1> 
+<mark2>9</mark2> 
+<mark3>9</mark3> 
+
+</cd> 
+<cd> 
+<stydent>Cтудент 2</stydent> 
+<mark1>4</mark1> 
+<mark2>8</mark2> 
+<mark3>9</mark3> 
+
+</cd> 
+<cd> 
+<stydent>Cтудент 3</stydent> 
+<mark1>9</mark1> 
+<mark2>9</mark2> 
+<mark3>9</mark3> 
+
+</cd> 
+<cd> 
+<stydent>Cтудент 4</stydent> 
+<mark1>3</mark1> 
+<mark2>3</mark2> 
+<mark3>9</mark3> 
+
+</cd> 
+<cd> 
+<stydent>Cтудент 5</stydent> 
+<mark1>6</mark1> 
+<mark2>6</mark2> 
+<mark3>9</mark3> 
+
+</cd> 
+</catalog> 

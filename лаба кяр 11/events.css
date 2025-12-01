@@ -1,0 +1,32 @@
+events {
+  display: block;
+  font-family: sans-serif;
+  background-color: #f4f4f4;
+  padding: 20px;
+}
+
+event {
+  display: block;
+  background: #fff;
+  border: 1px solid #ccc;
+  margin-bottom: 15px;
+  padding: 10px;
+}
+
+date {
+  display: block;
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+type {
+  display: block;
+  font-style: italic;
+  color: #555;
+}
+
+description {
+  display: block;
+  margin-top: 5px;
+  color: #333;
+}

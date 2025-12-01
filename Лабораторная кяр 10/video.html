@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="rus">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Задание 3</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+    }
+
+    #menu-toggle {
+      display: none;
+    }
+
+    .menu-button {
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      cursor: pointer;
+      background-color: #ddd;
+      padding: 10px;
+    }
+
+    .all {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+
+    .flexbox_nadpis {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      width: 100px;
+      background-color: #ddd;
+      padding: 10px;
+    }
+
+    .flexbox_ay_vid {
+      display: flex;
+      flex-wrap: wrap;
+      width: 350px;
+      background-color: #eee;
+      margin-top: 0;
+      padding: 10px;
+      gap: 10px;
+    }
+
+    @media (max-width: 560px) {
+      .all {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      .menu-button {
+        display: flex;
+      }
+
+      .flexbox_nadpis {
+        display: none;
+        flex-direction: wrap;
+        justify-content: center;
+        width: 100%;
+      }
+
+      #menu-toggle:checked + .menu-button + .all .flexbox_nadpis {
+        display: flex;
+      }
+
+      .flexbox_ay_vid {
+        justify-content: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <input type="checkbox" id="menu-toggle">
+  <label for="menu-toggle" class="menu-button"> Меню</label>
+
+  <div class="all">
+    <div class="flexbox_nadpis">
+      <div>Ютуб 1</div>
+      <div>Ютуб 2</div>
+      <div>Ютуб 3</div>
+    </div>
+
+    <div class="flexbox_ay_vid">
+      <div class="aydio"><audio src="audio1.mp3" controls></audio></div>
+      <div class="aydio"><audio src="audio2.mp3" controls></audio></div>
+      <div class="video"><video src="https://www.youtube.com/embed/dQw4w9WgXcQ" controls></video></div>
+      <div class="video"><video src="https://www.youtube.com/embed/xvFZjo5PgG0" controls></video></div>
+      <div class="video"><video src="https://www.youtube.com/embed/xvFZjo5PgG0" controls></video></div>
+
+    </div>
+  </div>
+
+</body>
+</html>

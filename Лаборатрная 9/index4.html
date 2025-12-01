@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="rus">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4</title>
+     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+</head>
+<body>
+<style>
+    
+
+
+/* задание 4*/
+.wrapper {
+    display: grid;
+    grid-template-columns: 50px 230px 200px;
+    grid-template-rows: 80px 100px 100px;
+    grid-gap: 10px;
+}
+
+
+/* Первый элемент растягивается на три строки вниз */
+.box1 {
+    grid-row: 1 / 4;
+    width: 50px;
+}
+
+/* Второй элемент растягивается на три столбца влево */
+.box2 {
+    grid-column: 2 / 4;
+    width: 340px;
+}
+
+/* Третий элемент остается в середине */
+.box3 {
+    grid-column: 2;
+    grid-row: 2 / 4;
+    width: 230px;
+}
+
+/* Четвертый элемент растягивается на две строки вниз */
+.box4 {
+    grid-row: 2 / 4;
+    width: 100px;
+}
+
+/* Пятый элемент растягивается на два столбца влево */
+.box5 {
+    grid-column: 1 / 4;
+    height: 50px;
+    width: 400px;
+}
+
+.box {
+    background-color: #0df228;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    overflow-wrap: break-word;
+
+}
+
+nav li {
+    margin-bottom: 10px;
+}
+
+nav a {
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.box h3, .box h4 {
+    margin-top: 0;
+}
+
+</style>
+<h2>Задание 4</h2>
+<div class="wrapper">
+    <nav class="box box1">
+        <ul>
+            <li><a href="index1.html">Задание1</a></li>
+            <li><a href="index2.html">Задание2</a></li>
+            <li><a href="index3.html">Задание3</a></li>
+        </ul>
+    </nav>
+    <header class="box box2">
+        <p>Grid — это CSS-модуль, позволяющий создавать двухмерные макеты с точным управлением строками и столбцами.</p>
+    </header>
+    <article class="box box3">
+        <h4>Преимущества Grid</h4>
+        <ul>
+            <li>Гибкость в размещении элементов</li>
+            <li>Управление как строками, так и колонками</li>
+            <li>Поддержка адаптивности</li>
+        </ul>
+    </article>
+    <aside class="box box4">
+        <h4>Сравнение с Flexbox</h4>
+        <p>Grid лучше подходит для сложных макетов, тогда как Flexbox — для линейных структур.</p>
+    </aside>
+    <footer class="box box5">
+        <p>&copy; 2025 Учебный проект по Grid-верстке</p>
+    </footer>
+</div>
+
+</body>
+
+</html>

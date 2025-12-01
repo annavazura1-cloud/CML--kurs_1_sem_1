@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Интерактивная карта стран</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #2c3e50;
+        }
+        .map-container {
+            display: inline-block;
+            margin: 20px auto;
+        }
+        img {
+            border: 2px solid #ddd;
+            border-radius: 5px;
+            max-width: 100%;
+            height: auto;
+        }
+        area {
+            cursor: pointer;
+        }
+        area:hover {
+            outline: 2px solid red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Интерактивная карта стран</h1>
+    <p>Кликните на любую страну, чтобы узнать о ней больше в Википедии.</p>
+
+    <!-- Изображение карты -->
+    <div class="map-container">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/9/99/Flag-map_of_the_world_%282021%29.png" 
+             alt="Карта мира" 
+             usemap="#worldmap" 
+             width="800" 
+             height="400">
+    </div>
+
+    <!-- Определение активных зон карты -->
+    <map name="worldmap">
+        <!-- Северная Америка -->
+        <area shape="rect" coords="100,100,250,200" href="https://ru.wikipedia.org/wiki/Соединённые_Штаты_Америки" alt="США" title="США">
+        <area shape="rect" coords="50,50,200,150" href="https://ru.wikipedia.org/wiki/Канада" alt="Канада" title="Канада">
+        
+        <!-- Южная Америка -->
+        <area shape="rect" coords="150,250,300,350" href="https://ru.wikipedia.org/wiki/Бразилия" alt="Бразилия" title="Бразилия">
+        
+        <!-- Россия -->
+        <area shape="rect" coords="380,50,500,180" href="https://ru.wikipedia.org/wiki/Россия" alt="Россия" title="Россия">
+        
+        <!-- Азия -->
+        <area shape="rect" coords="520,60,650,160" href="https://ru.wikipedia.org/wiki/Китай" alt="Китай" title="Китай">
+        <area shape="rect" coords="480,180,550,220" href="https://ru.wikipedia.org/wiki/Индия" alt="Индия" title="Индия">
+        
+        <!-- Африка -->
+        <area shape="rect" coords="320,180,480,350" href="https://ru.wikipedia.org/wiki/Африка" alt="Африка" title="Африка">
+        
+        <!-- Австралия -->
+        <area shape="rect" coords="620,300,750,410" href="https://ru.wikipedia.org/wiki/Австралия" alt="Австралия" title="Австралия">
+    </map>
+</body>
+</html>

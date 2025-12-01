@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="rus">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+</head>
+<style>
+/* задание 1*/
+.all{ display: flex;
+justify-content: center;}
+
+.all2{ margin-left: 380px;}
+
+.grid {
+    display: grid;
+    grid-template-columns: 150px 150px 150px 0px;
+    grid-template-rows: 20px 20px 20px 10px;
+    grid-gap: 5px;
+}
+
+.div1 {
+    justify-self: auto;
+    text-align: center;
+    border: 2px solid;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    width: 456px;
+}
+
+.div2 {
+    border: 2px solid;
+    height: 15px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 25px 375px 150px 160px;
+    grid-template-rows: 500px;
+    gap: 5px;
+}
+
+.header {
+    border: 2px solid #020202;
+    height: 215px;
+    width:15px;
+    text-align: center;
+    justify-content: center;
+    overflow-wrap: break-word;
+}
+
+.header1 {
+    border: 2px solid #020202;
+    height: 215px;
+    width:15px;
+    text-align: center;
+    justify-content: center;
+    overflow-wrap: break-word;
+}
+
+.content {
+    display: grid;
+    text-align: center;
+    grid-template-columns: repeat(4, 90px);
+    grid-template-rows: 220px;
+    gap: 5px;
+}
+
+.cell {
+    border: 2px solid #020202;
+    text-align: center;
+    justify-content: center;
+}
+
+.column-4 {
+    display: grid;
+    text-align: center;
+    grid-template-rows: repeat(2, 107px);
+    gap: 5px;
+}
+
+.sub-cell {
+    border: 2px solid #020202;
+    text-align: center;
+    justify-content: center;
+}
+</style>
+
+
+<body>
+<h2>Задание 1</h2>
+    <div class="all2">
+    <div class="grid">
+        <div class="div1">Заголовок</div>
+        <div class="div2">Ячейка 2</div>
+        <div class="div2">Ячейка 3</div>
+        <div class="div2">Ячейка 4</div>
+    </div>
+</div>
+<div class="all">
+     <div class="container">
+        <div class="header">За г  оловок</div>
+        <div class="content">
+            <div class="cell">Ячейка 1</div>
+            <div class="cell">Ячейка 2</div>
+            <div class="cell">Ячейка 3</div>
+            <div class="column-4">
+                <div class="sub-cell">Ячейка 4</div>
+                <div class="sub-cell">Ячейка 5</div>
+            </div>
+        </div>
+        <div class="header1">За г  оловок</div> 
+    </div>
+</div>

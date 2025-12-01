@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Задание 2</title>
+  <link rel="stylesheet" href="style 2.css">
+</head>
+<body>
+    <style>
+        body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.menu {
+  background-color: #b0afaffb;
+  position: relative;
+}
+
+.menu-icon {
+  background-color: #333;
+  cursor: pointer;
+  display: none;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  list-style: none;
+  margin: 0;
+}
+
+.nav li a {
+  color: rgb(5, 0, 0);
+  text-decoration: none;
+  padding: 10px 20px;
+  display: block;
+}
+
+
+/* Скрываем чекбокс */
+#menu-toggle {
+  display: none;
+}
+
+/* Адаптация для экранов ≤ 560px */
+@media (max-width: 560px) {
+  .menu-icon {
+    display: flex;
+    display: block;
+    color: #fcfbfb;
+    text-align: center;
+    height: 50px;
+  }
+
+  .nav {
+    display: none;
+    flex-direction: column;
+  justify-content: space-around;
+    align-items:center;
+    background-color: #3d3737ef;
+  }
+
+  #menu-toggle:checked + .menu-icon + .nav {
+    display: flex;
+  }
+
+  .nav li a {
+    border-bottom: 1px solid #ebf2f5;
+    color: #ebf2f5;
+    
+  }
+}
+    </style>
+    
+  <nav class="menu">
+    <input type="checkbox" id="menu-toggle">
+    <label for="menu-toggle" class="menu-icon"> Меню</label>
+    <ul class="nav">
+      <li><a href="">Горизонтальная ось</a></li>
+      <li><a href="https://isit.belstu.by/">Сайт ИСИТ</a></li>
+      <li><a href="">Горизонтальная ось</a></li>
+      <li><a href="">Горизонтальная ось</a></li>
+    </ul>
+  </nav>
+</body>
+</html>

@@ -1,0 +1,19 @@
+/* small.css */
+.gallery {
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.photo {
+  width: 90%;
+  margin-bottom: 15px;
+}
+
+.caption {
+  background-color: #7a0fdf;
+  font-weight: bold;
+  color: #7119c9;
+  font-size: 14px;
+  padding: 8px;
+}

@@ -1,0 +1,16 @@
+.ms {
+    list-style: none; /* Убираем исходные маркеры */
+    background: url(https://pngicon.ru/file/uploads/krasnyy-bant-png-bez-fona-dekorativnyy-lenta-228x256.png) 
+    0 / 16px no-repeat; /* Параметры фона */
+    padding-left: 24px; /* Смещаем текст влево */
+}
+
+.logo {
+ background-image: url('https://pngicon.ru/file/uploads/krasnyy-bant-png-bez-fona-dekorativnyy-lenta-228x256.png');
+   position: absolute;/*- надежно позиционирует элемент*/
+    top: 0;/*прижимает к правому верхнему углу*/
+    right: 0;
+    width: 90px;
+    height: auto;
+}
+
